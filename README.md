@@ -17,4 +17,4 @@ Spots is a student-project where i practiced turning a Figma design into a respo
 This webpage is deployed to Github Pages.
 
 -Deployment Link:
-https://freddyromero95/.github.io/se_project_spots
+https://freddyromero95.github.io/se_project_spots

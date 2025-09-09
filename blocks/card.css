@@ -28,14 +28,24 @@
 }
 
 .card__title {
-  max-width: 250px;
-  font-size: 16px;
+  max-width: 353px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+  }
+
+  .card__title {
+    max-width: 250px;
+    font-size: 16px;
   }
 }

@@ -1,5 +1,5 @@
 .modal {
-  visibility: hidden;
+  visibility: visible;
   background-color: #00000080;
   position: fixed;
   top: 0;

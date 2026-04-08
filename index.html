@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,7 +32,7 @@
               <img src="./images/pencil.svg" alt="Pencil icon" />Edit Profile
             </button>
           </div>
-          <button type="button" class="profile__add-btn">
+          <button class="profile__new-post-btn" type="button">
             <img src="./images/plus.svg" alt="Plus icon" />New Post
           </button>
         </section>
@@ -112,7 +112,7 @@
       <footer class="footer page__section">
         <p class="footer__text">2023 © Spots</p>
       </footer>
-      <div class="modal modal_type_edit-profile">
+      <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit Profile</h2>
@@ -139,7 +139,7 @@
           </form>
         </div>
       </div>
-      <div class="modal modal_type-new-post">
+      <div class="modal" id="new-post-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">New Post</h2>
@@ -167,5 +167,6 @@
         </div>
       </div>
     </div>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

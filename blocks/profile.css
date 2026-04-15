@@ -25,7 +25,7 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* current browser support */
-  -webkit-line-orient: vertical;
+  -webkit-box-orient: vertical;
   max-width: 420px;
 }
 

@@ -46,6 +46,10 @@
   align-items: center;
 }
 
+.modal__close-btn:hover {
+  opacity: 0.6s;
+}
+
 .modal__close-btn::before,
 .modal__close-btn::after {
   content: "";
@@ -100,6 +104,8 @@
   font-size: 16px;
   line-height: 110%;
   color: #212121;
+
+  box-sizing: border-box;
 }
 
 .modal__input::placeholder {
@@ -127,6 +133,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
+
+  transition: opacity 0.3s ease;
 }
 
 .modal__form .modal__label {
@@ -141,7 +149,7 @@
 
   .modal__container {
     max-width: 300px;
-    width: calc(100%-24px);
+    width: calc(100% - 24px);
     padding: 12px;
     border-radius: 8px;
   }

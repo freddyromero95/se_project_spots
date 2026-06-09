@@ -92,6 +92,22 @@
   color: #212121b3;
 }
 
+.modal__preview-container {
+  position: relative;
+}
+
+.modal__preview-image {
+  max-width: 80vw;
+  max-height: 80vh;
+  display: block;
+  object-fit: contain;
+}
+
+.modal__preview-caption {
+  color: #fff;
+  margin-top: 8px;
+}
+
 .modal__input {
   display: block;
   margin: 8px 0 0;
@@ -145,10 +161,6 @@
   opacity: 0.8;
 }
 
-.modal__form .modal__label {
-  margin: 0;
-}
-
 @media screen and (max-width: 627px) {
   .modal__container {
     max-width: 300px;
@@ -170,7 +182,7 @@
   }
 
   .modal__label {
-    margin-bottom: 8px;
+    margin: 0 0 8px;
   }
 
   .modal__input {

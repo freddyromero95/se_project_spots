@@ -46,6 +46,27 @@
   align-items: center;
 }
 
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__close-btn_type_preview {
+  top: -48px;
+  right: -48px;
+}
+
 .modal__close-btn:hover {
   opacity: 0.6;
 }

@@ -35,6 +35,7 @@
 }
 
 .card__like-btn:hover {
+  background-image: url("../images/hearrt-filled.svg");
   opacity: 1;
 }
 
@@ -47,10 +48,15 @@
   border: none;
   cursor: pointer;
   background: transparent;
+  background-image: url(../images/trash.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .card__delete-btn:hover {
-  opacity: 0.6;
+  background-color: #ff6565;
 }
 
 .card__title {

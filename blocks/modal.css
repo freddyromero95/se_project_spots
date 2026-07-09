@@ -28,14 +28,15 @@
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 32px;
-  right: 32px;
-  width: 40px;
-  height: 40px;
+  top: 36px;
+  right: 50px;
+  width: 23px;
+  height: 23px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -48,7 +49,7 @@
 
 .modal__close-btn_type_preview {
   top: 0;
-  right: 0;
+  right: -32px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -96,7 +97,6 @@
 }
 
 .modal__label {
-  margin: 0 0 32px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -109,6 +109,8 @@
 }
 
 .modal__preview-image {
+  width: 100%;
+  border-radius: 8px;
   max-width: 80vw;
   max-height: 80vh;
   display: block;
@@ -116,8 +118,17 @@
 }
 
 .modal__preview-caption {
+  margin: 0;
+  padding: 4px 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
   color: #fff;
-  margin-top: 8px;
+  position: absolute;
+  background-color: #212121;
+  border-radius: 8px;
+  left: 0;
+  top: calc(100% + 10px);
 }
 
 .modal__input {
@@ -175,9 +186,7 @@
 
 @media screen and (max-width: 627px) {
   .modal__container {
-    max-width: 300px;
-    width: calc(100% - 24px);
-    padding: 12px;
+    padding: 22px 12px 12px;
     border-radius: 8px;
   }
 
@@ -205,7 +214,7 @@
   }
 
   .modal__close-btn {
-    top: 12px;
+    top: 22px;
     right: 12px;
   }
 
@@ -218,6 +227,10 @@
 
   .modal__preview-image {
     max-width: 90vw;
+  }
+
+  .modal__preview-caption {
+    font-size: 16px;
   }
 
   .modal__close-btn_type_preview {

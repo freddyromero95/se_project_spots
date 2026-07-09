@@ -19,44 +19,47 @@
 }
 
 .card__like-btn {
-  background-image: url(../images/Union.svg);
   width: 23px;
   height: 20px;
   border: none;
-  background-color: transparent;
-  opacity: 0.4;
-  cursor: pointer;
+  background: transparent;
+  background-image: url("../images/Union.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.card__like-btn_active {
-  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .card__like-btn:hover {
-  background-image: url("../images/hearrt-filled.svg");
-  opacity: 1;
+  opacity: 0.5;
+}
+
+.card__like-btn_active {
+  background-image: url("../images/heart-filled.svg");
+}
+
+.card__like-btn_active:hover {
+  opacity: 0.5;
 }
 
 .card__delete-btn {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
   border: none;
-  cursor: pointer;
-  background: transparent;
-  background-image: url(../images/trash.svg);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../images/trash.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 50%;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .card__delete-btn:hover {
-  background-color: #ff6565;
+  opacity: 0.6;
 }
 
 .card__title {

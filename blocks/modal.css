@@ -238,3 +238,34 @@
     right: 0;
   }
 }
+
+.modal__input_type_error {
+  border-bottom-color: #ff0000;
+}
+
+.modal__error {
+  display: block;
+  min-height: 30px;
+  margin-top: 5px;
+  color: #ff0000;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0;
+}
+
+.modal__error_visible {
+  opacity: 1;
+}
+
+.modal__submit-btn_disabled {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  cursor: default;
+  opacity: 0.2;
+}
+
+.modal__submit-btn_disabled:hover {
+  background-color: transparent;
+  opacity: 0.2;
+}

@@ -76,7 +76,7 @@ const previewImage = previewModal.querySelector(".modal__preview-image");
 const previewCaption = previewModal.querySelector(".modal__preview-caption");
 const previewCloseBtn = previewModal.querySelector(".modal__close-btn");
 
-function handleEscape(evt) {
+function closeModalOnEscape(evt) {
   if (evt.key === "Escape") {
     const openedModal = document.querySelector(".modal_is-opened");
 
@@ -88,12 +88,12 @@ function handleEscape(evt) {
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
-  document.addEventListener("keydown", handleEscape);
+  document.addEventListener("keydown", closeModalOnEscape);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
-  document.removeEventListener("keydown", handleEscape);
+  document.removeEventListener("keydown", closeModalOnEscape);
 }
 
 const modals = document.querySelectorAll(".modal");

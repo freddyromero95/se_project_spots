@@ -1,0 +1,39 @@
+{
+  "name": "se_project_spots",
+  "version": "1.0.0",
+  "description": "An interactive photo-sharing website built with HTML, CSS, and JavaScript.",
+  "homepage": "https://github.com/freddyromero95/se_project_spots#readme",
+  "bugs": {
+    "url": "https://github.com/freddyromero95/se_project_spots/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freddyromero95/se_project_spots.git"
+  },
+  "license": "ISC",
+  "author": "Freddy Romero",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "8.0.7",
+    "@babel/preset-env": "8.0.7",
+    "autoprefixer": "10.6.1",
+    "babel-loader": "10.1.1",
+    "css-loader": "7.1.5",
+    "cssnano": "9.9.0",
+    "html-webpack-plugin": "5.6.8",
+    "mini-css-extract-plugin": "2.10.2",
+    "postcss": "8.5.31",
+    "postcss-loader": "8.2.1",
+    "webpack": "5.112.0",
+    "webpack-cli": "7.2.3",
+    "webpack-dev-server": "6.1.0"
+  },
+  "dependencies": {
+    "core-js": "3.51.0"
+  }
+}

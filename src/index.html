@@ -24,11 +24,19 @@
 
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="<%= require('./images/avatar.jpg') %>"
-            alt="Bessie Coleman"
-            class="profile__avatar"
-          />
+          <button
+            type="button"
+            class="profile__avatar-btn"
+            id="profile-avatar-btn"
+            aria-label="Change profile picture"
+          >
+            <img
+              src="<%= require('./images/avatar.jpg') %>"
+              alt="Profile avatar"
+              class="profile__avatar"
+              id="profile-avatar"
+            />
+          </button>
 
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
@@ -55,14 +63,22 @@
 
           <template id="card-template">
             <li class="card">
-              <button type="button" class="card__delete-btn"></button>
+              <button
+                type="button"
+                class="card__delete-btn"
+                aria-label="Delete card"
+              ></button>
 
               <img class="card__image" src="#" alt="Card Image" />
 
               <div class="card__content">
                 <h2 class="card__title"></h2>
 
-                <button type="button" class="card__like-btn"></button>
+                <button
+                  type="button"
+                  class="card__like-btn"
+                  aria-label="Like card"
+                ></button>
               </div>
             </li>
           </template>
@@ -76,7 +92,11 @@
       <!-- Edit Profile Modal -->
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-btn"></button>
+          <button
+            type="button"
+            class="modal__close-btn"
+            aria-label="Close"
+          ></button>
 
           <h2 class="modal__title">Edit Profile</h2>
 
@@ -126,7 +146,11 @@
       <!-- New Post Modal -->
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-btn"></button>
+          <button
+            type="button"
+            class="modal__close-btn"
+            aria-label="Close"
+          ></button>
 
           <h2 class="modal__title">New Post</h2>
 
@@ -174,12 +198,68 @@
         </div>
       </div>
 
+      <!-- Delete Confirmation Modal -->
+      <div class="modal" id="delete-card-modal">
+        <div class="modal__container">
+          <button
+            type="button"
+            class="modal__close-btn"
+            aria-label="Close"
+          ></button>
+
+          <h2 class="modal__title">Are you sure?</h2>
+
+          <form class="modal__form" name="delete-card">
+            <button type="submit" class="modal__submit-btn">Yes</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Edit Avatar Modal -->
+      <div class="modal" id="edit-avatar-modal">
+        <div class="modal__container">
+          <button
+            type="button"
+            class="modal__close-btn"
+            aria-label="Close"
+          ></button>
+
+          <h2 class="modal__title">Change Profile Picture</h2>
+
+          <form class="modal__form" name="edit-avatar" novalidate>
+            <label for="avatar-url-input" class="modal__label">
+              Image link
+
+              <input
+                id="avatar-url-input"
+                name="avatar"
+                type="url"
+                class="modal__input"
+                placeholder="Paste an image URL"
+                required
+              />
+
+              <span id="avatar-url-input-error" class="modal__error"></span>
+            </label>
+
+            <button
+              type="submit"
+              class="modal__submit-btn modal__submit-btn_disabled"
+              disabled
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+
       <!-- Image Preview Modal -->
       <div class="modal" id="preview-modal">
         <div class="modal__preview-container">
           <button
             type="button"
             class="modal__close-btn modal__close-btn_type_preview"
+            aria-label="Close"
           ></button>
 
           <img class="modal__preview-image" src="#" alt="Preview Image" />
